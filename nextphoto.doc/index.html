@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 5.0.1">
+  <meta name="description" content="next_photo API docs, for the Dart programming language.">
+  <title>next_photo - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href=""
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">next_photo package</li>
+  </ol>
+  <div class="self-name">next_photo</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="next_photo----omit-in-toc---">next_photo &lt;!-- omit in toc --&gt;</h1>
+<p>A Flutter Instagram look-alike photo blog application. Uses <a href="https://jsonplaceholder.typicode.com/">jsonplaceholder</a> for mock data. Please refer to <a href="#coding-task">coding task</a> for info about desired features.</p>
+<p>🚧  Still under development. So not all things are finished yet.👷‍♂️ 🚧</p>
+<p><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/62a8c9143896211.62830596b5878.png" alt="alt text"></p>
+<h2 id="table-of-contents----omit-in-toc---">Table of contents &lt;!-- omit in toc --&gt;</h2>
+<ul>
+<li><a href="#coding-task">Coding task</a></li>
+<li><a href="#figma-design">Figma design</a></li>
+<li><a href="#flutter-version">Flutter version</a></li>
+<li><a href="#web-demo">Web demo</a></li>
+<li><a href="#project-structure">Project structure</a></li>
+<li><a href="#feature-structure">Feature structure</a></li>
+<li><a href="#running-the-app">Running the app</a></li>
+<li><a href="#tests">Tests</a></li>
+<li><a href="#index-files">Index files</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#code-coverage">Code coverage</a></li>
+</ul>
+<h2 id="coding-task">Coding task</h2>
+<p>Create the following Flutter app:</p>
+<ol>
+<li>Create Infinite scroll list with images (use <a href="https://jsonplaceholder.typicode.com">https://jsonplaceholder.typicode.com</a> photos as API source) ✅</li>
+<li>Each image in the list has a title, an image preview and a like button. ✅</li>
+<li>By tapping on a preview image user is shown a full-sized image in a popup. ❌</li>
+<li>User can like and unlike images by tapping Like button. ✅</li>
+<li>Like state persist between app launches. ✅</li>
+</ol>
+<h2 id="figma-design">Figma design</h2>
+<p>The figma design file that was prepared by me for this app can be found <a href="https://www.figma.com/file/kWh5yBJmKgaLXaM7avh39H/next_photo?node-id=5%3A600">here</a>.</p>
+<h2 id="flutter-version">Flutter version</h2>
+<p>This app was developed and tested on the following flutter channel and version:</p>
+<pre class="language-javascript"><code class="language-javascript">Flutter 3.0.0 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision ee4e09cce0 (7 days ago) • 2022-05-09 16:45:18 -0700
+Engine • revision d1b9a6938a
+Tools • Dart 2.17.0 • DevTools 2.12.2
+</code></pre>
+<h2 id="web-demo">Web demo</h2>
+<p>The live web version demo of the app can be found <a href="https://sebastianwaloszek.github.io/nextphoto.web/#/">here</a>.</p>
+<h2 id="project-structure">Project structure</h2>
+<p>The project's main <a href="lib/src/">src</a> module contains 4 submodules:</p>
+<ul>
+<li><a href="lib/src/app">app</a> - contains code responsible for configuring and running the application.</li>
+<li><a href="lib/src/base">base</a> - contains components that can serve as a basis for any flutter project.</li>
+<li><a href="lib/src/common">common</a> - contains reusable components that are project specific and can be shared by many separate
+features.</li>
+<li><a href="lib/src/features">features</a> - contains modules for all the app's main features.</li>
+</ul>
+<h2 id="feature-structure">Feature structure</h2>
+<p>// TODO</p>
+<h2 id="running-the-app">Running the app</h2>
+<p>If you want to run the app using the terminal:</p>
+<ul>
+<li>Debug &amp; Development</li>
+</ul>
+<pre class="language-dart"><code>flutter run --flavor dev lib/src/main_dev.dart
+</code></pre>
+<ul>
+<li>Release &amp; Production</li>
+</ul>
+<pre class="language-dart"><code>flutter run --release --flavor prod lib/src/main_prod.dart
+</code></pre>
+<ul>
+<li>Web</li>
+</ul>
+<pre class="language-dart"><code>flutter build web --web-renderer html -t lib/src/main_dev.dart
+</code></pre>
+<h2 id="tests">Tests</h2>
+<p>Run unit tests by typing:</p>
+<pre class="language-dart"><code>flutter test
+</code></pre>
+<h2 id="index-files">Index files</h2>
+<p>To update the list of files included in documentation for <code>base</code>, <code>common</code> and <code>features</code> libraries code generation with <a href="https://pub.dev/packages/index_generator">index_generator</a> is used.</p>
+<p>To activate <code>index_generator</code> run:</p>
+<pre class="language-dart"><code>flutter pub global activate index_generator
+</code></pre>
+<p>To update index files run:</p>
+<pre class="language-dart"><code>flutter pub global run index_generator
+</code></pre>
+<p>Right now the libraries <code>app</code> and <code>di</code> don't use code generation as they are small and usually don't change in terms of included files.</p>
+<h2 id="documentation">Documentation</h2>
+<p>Documentation for the whole app can be found here. Generate it on your own by running:</p>
+<pre class="language-dart"><code>flutter pub global run dartdoc 
+</code></pre>
+<h2 id="code-coverage">Code coverage</h2>
+<p>To generate code coverage run:</p>
+<pre class="language-dart"><code>dart pub global activate remove_from_coverage
+flutter test --coverage 
+remove_from_coverage -f coverage/lcov.info -r '.g.dart|.freezed.dart$|\bgenerated\b'
+genhtml coverage/lcov.info -o coverage/html
+</code></pre>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="app">
+  <span class="name"><a href="app/app-library.html">app</a></span> 
+
+</dt>
+<dd>The application framework. <a href="app/app-library.html">[...]</a>
+</dd>
+
+          <dt id="base">
+  <span class="name"><a href="base/base-library.html">base</a></span> 
+
+</dt>
+<dd>The base framework. <a href="base/base-library.html">[...]</a>
+</dd>
+
+          <dt id="common">
+  <span class="name"><a href="common/common-library.html">common</a></span> 
+
+</dt>
+<dd>The common framework. <a href="common/common-library.html">[...]</a>
+</dd>
+
+          <dt id="di">
+  <span class="name"><a href="di/di-library.html">di</a></span> 
+
+</dt>
+<dd>The dependency injection framework. <a href="di/di-library.html">[...]</a>
+</dd>
+
+          <dt id="features">
+  <span class="name"><a href="features/features-library.html">features</a></span> 
+
+</dt>
+<dd>The features framework. <a href="features/features-library.html">[...]</a>
+</dd>
+
+          <dt id="generated_plugin_registrant">
+  <span class="name"><a href="generated_plugin_registrant/generated_plugin_registrant-library.html">generated_plugin_registrant</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li class="self-crumb">next_photo package</li>
+</ol>
+
+
+    <h5 class="hidden-xs"><span class="package-name">next_photo</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="app/app-library.html">app</a></li>
+      <li><a href="base/base-library.html">base</a></li>
+      <li><a href="common/common-library.html">common</a></li>
+      <li><a href="di/di-library.html">di</a></li>
+      <li><a href="features/features-library.html">features</a></li>
+      <li><a href="generated_plugin_registrant/generated_plugin_registrant-library.html">generated_plugin_registrant</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    next_photo
+      0.0.1+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

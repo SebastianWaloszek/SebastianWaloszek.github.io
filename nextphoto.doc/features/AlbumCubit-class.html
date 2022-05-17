@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the AlbumCubit class from the features library, for the Dart programming language.">
+  <title>AlbumCubit class - features library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">next_photo</a></li>
+    <li><a href="../features/features-library.html">features</a></li>
+    <li class="self-crumb">AlbumCubit class</li>
+  </ol>
+  <div class="self-name">AlbumCubit</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">AlbumCubit</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>The cubit for keeping the state of a single <a href="../features/Album-class.html">Album</a> object.</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></li>
+          <li><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase-class.html">BlocBase</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../features/AlbumState-class.html">AlbumState</a></span>&gt;</span></li>
+          <li><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/Cubit-class.html">Cubit</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../features/AlbumState-class.html">AlbumState</a></span>&gt;</span></li>
+          <li>AlbumCubit</li>
+        </ul></dd>
+
+
+
+
+
+        <dt>Annotations</dt>
+        <dd><ul class="annotation-list clazz-relationships">
+          <li>@<a href="https://pub.dev/documentation/injectable/1.5.3/injectable/injectable-constant.html">injectable</a></li>
+        </ul></dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="AlbumCubit" class="callable">
+          <span class="name"><a href="../features/AlbumCubit/AlbumCubit.html">AlbumCubit</a></span><span class="signature">(<span class="parameter" id="-param-getAlbum">{<span>required</span> <span class="type-annotation"><a href="../features/GetAlbum-class.html">GetAlbum</a></span> <span class="parameter-name">getAlbum</span>}</span>)</span>
+        </dt>
+        <dd>
+          Creates the cubit. 
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="isClosed" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/isClosed.html">isClosed</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> 
+
+</dt>
+<dd class="inherited">
+  Whether the bloc is closed. <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/isClosed.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="state" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/state.html">state</a></span>
+  <span class="signature">&#8594; <a href="../features/AlbumState-class.html">AlbumState</a></span> 
+
+</dt>
+<dd class="inherited">
+  The current <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/state.html">state</a>. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="stream" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/stream.html">stream</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Stream-class.html">Stream</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../features/AlbumState-class.html">AlbumState</a></span>&gt;</span></span> 
+
+</dt>
+<dd class="inherited">
+  The current <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/stream.html">stream</a> of states. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="addError" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/addError.html">addError</a></span><span class="signature">(<wbr><span class="parameter" id="addError-param-error"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">error</span>, </span><span class="parameter" id="addError-param-stackTrace">[<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/StackTrace-class.html">StackTrace</a>?</span> <span class="parameter-name">stackTrace</span>]</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Reports an <code>error</code> which triggers <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onError.html">onError</a> with an optional <a href="https://api.flutter.dev/flutter/dart-core/StackTrace-class.html">StackTrace</a>. 
+  <div class="features">@<a href="https://pub.dev/documentation/meta/1.7.0/meta/mustCallSuper-constant.html">mustCallSuper</a>, @<a href="https://pub.dev/documentation/meta/1.7.0/meta/protected-constant.html">protected</a>, inherited</div>
+
+</dd>
+
+        <dt id="close" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/close.html">close</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Closes the instance.
+This method should be called when the instance is no longer needed.
+Once <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/close.html">close</a> is called, the instance can no longer be used. 
+  <div class="features">@<a href="https://pub.dev/documentation/meta/1.7.0/meta/mustCallSuper-constant.html">mustCallSuper</a>, inherited</div>
+
+</dd>
+
+        <dt id="emit" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/emit.html">emit</a></span><span class="signature">(<wbr><span class="parameter" id="emit-param-state"><span class="type-annotation"><a href="../features/AlbumState-class.html">AlbumState</a></span> <span class="parameter-name">state</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Updates the <code>state</code> to the provided <code>state</code>.
+<a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/emit.html">emit</a> does nothing if the <code>state</code> being emitted
+is equal to the current <code>state</code>. <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/emit.html">[...]</a>
+  <div class="features">@<a href="https://pub.dev/documentation/meta/1.7.0/meta/protected-constant.html">protected</a>, @<a href="https://pub.dev/documentation/meta/1.7.0/meta/visibleForTesting-constant.html">visibleForTesting</a>, inherited</div>
+
+</dd>
+
+        <dt id="getAlbum" class="callable">
+  <span class="name"><a href="../features/AlbumCubit/getAlbum.html">getAlbum</a></span><span class="signature">(<wbr><span class="parameter" id="getAlbum-param-albumId"><span class="type-annotation"><a href="../features/AlbumId-class.html">AlbumId</a></span> <span class="parameter-name">albumId</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter">void</span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd>
+  Loads an album for a given <code>albumId</code>. 
+  
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="onChange" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onChange.html">onChange</a></span><span class="signature">(<wbr><span class="parameter" id="onChange-param-change"><span class="type-annotation"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/Change-class.html">Change</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../features/AlbumState-class.html">AlbumState</a></span>&gt;</span></span> <span class="parameter-name">change</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Called whenever a <code>change</code> occurs with the given <code>change</code>.
+A <code>change</code> occurs when a new <code>state</code> is emitted.
+<a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onChange.html">onChange</a> is called before the <code>state</code> of the <code>cubit</code> is updated.
+<a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onChange.html">onChange</a> is a great spot to add logging/analytics for a specific <code>cubit</code>. <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onChange.html">[...]</a>
+  <div class="features">@<a href="https://pub.dev/documentation/meta/1.7.0/meta/mustCallSuper-constant.html">mustCallSuper</a>, @<a href="https://pub.dev/documentation/meta/1.7.0/meta/protected-constant.html">protected</a>, inherited</div>
+
+</dd>
+
+        <dt id="onError" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onError.html">onError</a></span><span class="signature">(<wbr><span class="parameter" id="onError-param-error"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">error</span>, </span><span class="parameter" id="onError-param-stackTrace"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/StackTrace-class.html">StackTrace</a></span> <span class="parameter-name">stackTrace</span></span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Called whenever an <code>error</code> occurs and notifies <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocObserver/onError.html">BlocObserver.onError</a>. <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onError.html">[...]</a>
+  <div class="features">@<a href="https://pub.dev/documentation/meta/1.7.0/meta/mustCallSuper-constant.html">mustCallSuper</a>, @<a href="https://pub.dev/documentation/meta/1.7.0/meta/protected-constant.html">protected</a>, inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">next_photo</a></li>
+  <li><a href="../features/features-library.html">features</a></li>
+  <li class="self-crumb">AlbumCubit class</li>
+</ol>
+
+
+    <h5>features library</h5>
+    <ol>
+  <li class="section-title"><a href="../features/features-library.html#classes">Classes</a></li>
+  <li><a href="../features/Address-class.html">Address</a></li>
+  <li><a href="../features/AddressFromModel-class.html">AddressFromModel</a></li>
+  <li><a href="../features/AddressModel-class.html">AddressModel</a></li>
+  <li><a href="../features/Album-class.html">Album</a></li>
+  <li><a href="../features/AlbumCubit-class.html">AlbumCubit</a></li>
+  <li><a href="../features/AlbumDataSource-class.html">AlbumDataSource</a></li>
+  <li><a href="../features/AlbumFromModel-class.html">AlbumFromModel</a></li>
+  <li><a href="../features/AlbumId-class.html">AlbumId</a></li>
+  <li><a href="../features/AlbumModel-class.html">AlbumModel</a></li>
+  <li><a href="../features/AlbumRepository-class.html">AlbumRepository</a></li>
+  <li><a href="../features/AlbumRepositoryImpl-class.html">AlbumRepositoryImpl</a></li>
+  <li><a href="../features/AlbumRestDataSource-class.html">AlbumRestDataSource</a></li>
+  <li><a href="../features/AlbumsCubit-class.html">AlbumsCubit</a></li>
+  <li><a href="../features/AlbumsState-class.html">AlbumsState</a></li>
+  <li><a href="../features/AlbumState-class.html">AlbumState</a></li>
+  <li><a href="../features/Company-class.html">Company</a></li>
+  <li><a href="../features/CompanyFromModel-class.html">CompanyFromModel</a></li>
+  <li><a href="../features/CompanyModel-class.html">CompanyModel</a></li>
+  <li><a href="../features/GeoLocation-class.html">GeoLocation</a></li>
+  <li><a href="../features/GeoLocationFromModel-class.html">GeoLocationFromModel</a></li>
+  <li><a href="../features/GeoLocationModel-class.html">GeoLocationModel</a></li>
+  <li><a href="../features/GetAlbum-class.html">GetAlbum</a></li>
+  <li><a href="../features/GetAlbumParams-class.html">GetAlbumParams</a></li>
+  <li><a href="../features/GetAlbumPhotos-class.html">GetAlbumPhotos</a></li>
+  <li><a href="../features/GetAlbumPhotosParams-class.html">GetAlbumPhotosParams</a></li>
+  <li><a href="../features/GetAllAlbums-class.html">GetAllAlbums</a></li>
+  <li><a href="../features/GetAllPhotos-class.html">GetAllPhotos</a></li>
+  <li><a href="../features/GetAllUsers-class.html">GetAllUsers</a></li>
+  <li><a href="../features/GetPhoto-class.html">GetPhoto</a></li>
+  <li><a href="../features/GetPhotoParams-class.html">GetPhotoParams</a></li>
+  <li><a href="../features/GetUser-class.html">GetUser</a></li>
+  <li><a href="../features/GetUserAlbums-class.html">GetUserAlbums</a></li>
+  <li><a href="../features/GetUserAlbumsParams-class.html">GetUserAlbumsParams</a></li>
+  <li><a href="../features/GetUserParams-class.html">GetUserParams</a></li>
+  <li><a href="../features/HomeScreen-class.html">HomeScreen</a></li>
+  <li><a href="../features/Photo-class.html">Photo</a></li>
+  <li><a href="../features/PhotoCubit-class.html">PhotoCubit</a></li>
+  <li><a href="../features/PhotoDataSource-class.html">PhotoDataSource</a></li>
+  <li><a href="../features/PhotoFromModel-class.html">PhotoFromModel</a></li>
+  <li><a href="../features/PhotoId-class.html">PhotoId</a></li>
+  <li><a href="../features/PhotoLikeCubit-class.html">PhotoLikeCubit</a></li>
+  <li><a href="../features/PhotoLikeDataStorage-class.html">PhotoLikeDataStorage</a></li>
+  <li><a href="../features/PhotoLikeDataStorageImpl-class.html">PhotoLikeDataStorageImpl</a></li>
+  <li><a href="../features/PhotoLikeState-class.html">PhotoLikeState</a></li>
+  <li><a href="../features/PhotoListItem-class.html">PhotoListItem</a></li>
+  <li><a href="../features/PhotoModel-class.html">PhotoModel</a></li>
+  <li><a href="../features/PhotoRepository-class.html">PhotoRepository</a></li>
+  <li><a href="../features/PhotoRepositoryImpl-class.html">PhotoRepositoryImpl</a></li>
+  <li><a href="../features/PhotoRestDataSource-class.html">PhotoRestDataSource</a></li>
+  <li><a href="../features/PhotosCubit-class.html">PhotosCubit</a></li>
+  <li><a href="../features/PhotosState-class.html">PhotosState</a></li>
+  <li><a href="../features/PhotoState-class.html">PhotoState</a></li>
+  <li><a href="../features/SetPhotoLike-class.html">SetPhotoLike</a></li>
+  <li><a href="../features/SetPhotoLikeParams-class.html">SetPhotoLikeParams</a></li>
+  <li><a href="../features/User-class.html">User</a></li>
+  <li><a href="../features/UserCubit-class.html">UserCubit</a></li>
+  <li><a href="../features/UserDataSource-class.html">UserDataSource</a></li>
+  <li><a href="../features/UserFromModel-class.html">UserFromModel</a></li>
+  <li><a href="../features/UserId-class.html">UserId</a></li>
+  <li><a href="../features/UserModel-class.html">UserModel</a></li>
+  <li><a href="../features/UserRepository-class.html">UserRepository</a></li>
+  <li><a href="../features/UserRepositoryImpl-class.html">UserRepositoryImpl</a></li>
+  <li><a href="../features/UserRestDataSource-class.html">UserRestDataSource</a></li>
+  <li><a href="../features/UsersCubit-class.html">UsersCubit</a></li>
+  <li><a href="../features/UsersState-class.html">UsersState</a></li>
+  <li><a href="../features/UserState-class.html">UserState</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../features/AlbumCubit-class.html#constructors">Constructors</a></li>
+    <li><a href="../features/AlbumCubit/AlbumCubit.html">AlbumCubit</a></li>
+
+
+    <li class="section-title inherited">
+      <a href="../features/AlbumCubit-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/isClosed.html">isClosed</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/state.html">state</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/stream.html">stream</a></li>
+
+    <li class="section-title"><a href="../features/AlbumCubit-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/addError.html">addError</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/close.html">close</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/emit.html">emit</a></li>
+    <li><a href="../features/AlbumCubit/getAlbum.html">getAlbum</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onChange.html">onChange</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase/onError.html">onError</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../features/AlbumCubit-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    next_photo
+      0.0.1+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

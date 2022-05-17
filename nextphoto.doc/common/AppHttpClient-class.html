@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the AppHttpClient class from the common library, for the Dart programming language.">
+  <title>AppHttpClient class - common library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">next_photo</a></li>
+    <li><a href="../common/common-library.html">common</a></li>
+    <li class="self-crumb">AppHttpClient class</li>
+  </ol>
+  <div class="self-name">AppHttpClient</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">AppHttpClient</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>A custom Dio HTTP client implementation.</p>
+</section>
+
+
+    <section>
+      <dl class="dl-horizontal">
+
+        <dt>Implemented types</dt>
+        <dd>
+          <ul class="comma-separated clazz-relationships">
+            <li><a href="https://pub.dev/documentation/dio/4.0.6/dio/Dio-class.html">Dio</a></li>
+          </ul>
+        </dd>
+
+        <dt>Mixed in types</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin-class.html">DioMixin</a></li>
+        </ul></dd>
+
+
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="AppHttpClient" class="callable">
+          <span class="name"><a href="../common/AppHttpClient/AppHttpClient.html">AppHttpClient</a></span><span class="signature">(<span class="parameter" id="-param-options">{<span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/BaseOptions-class.html">BaseOptions</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="-param-interceptors"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Interceptor-class.html">Interceptor</a></span>&gt;</span></span> <span class="parameter-name">interceptors</span> = <span class="default-value">const []</span>}</span>)</span>
+        </dt>
+        <dd>
+          Creates HTTP client. 
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="httpClientAdapter" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/httpClientAdapter.html">httpClientAdapter</a></span>
+  <span class="signature">&#8596; <a href="https://pub.dev/documentation/dio/4.0.6/dio/HttpClientAdapter-class.html">HttpClientAdapter</a></span> 
+
+</dt>
+<dd class="inherited">
+   
+  <div class="features">read / write, inherited</div>
+
+</dd>
+
+        <dt id="interceptors" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/interceptors.html">interceptors</a></span>
+  <span class="signature">&#8594; <a href="https://pub.dev/documentation/dio/4.0.6/dio/Interceptors-class.html">Interceptors</a></span> 
+
+</dt>
+<dd class="inherited">
+   
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="options" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/options.html">options</a></span>
+  <span class="signature">&#8596; <a href="https://pub.dev/documentation/dio/4.0.6/dio/BaseOptions-class.html">BaseOptions</a></span> 
+
+</dt>
+<dd class="inherited">
+  Default Request config. More see <a href="https://pub.dev/documentation/dio/4.0.6/dio/BaseOptions-class.html">BaseOptions</a>. 
+  <div class="features">read / write, inherited</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="transformer" class="property inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/transformer.html">transformer</a></span>
+  <span class="signature">&#8596; <a href="https://pub.dev/documentation/dio/4.0.6/dio/Transformer-class.html">Transformer</a></span> 
+
+</dt>
+<dd class="inherited">
+  <a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/transformer.html">transformer</a> allows changes to the request/response data before it is sent/received to/from the server
+This is only applicable for request methods 'PUT', 'POST', and 'PATCH'. 
+  <div class="features">read / write, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="clear" class="callable inherited">
+  <span class="name deprecated"><a class="deprecated" href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/clear.html">clear</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Clear the current Dio instance waiting queue. 
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Will delete in v5.0. Use `QueuedInterceptor` instead, more detail see&#39; &#39; https:&#47;&#47;github.com&#47;flutterchina&#47;dio&#47;issues&#47;1308&#39;), inherited</div>
+
+</dd>
+
+        <dt id="close" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/close.html">close</a></span><span class="signature">(<wbr><span class="parameter" id="close-param-force">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">force</span> = <span class="default-value">false</span>}</span>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Shuts down the dio client. <a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/close.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="delete" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/delete.html">delete</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="delete-param-path"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span>, </span><span class="parameter" id="delete-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="delete-param-queryParameters"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">queryParameters</span>, </span><span class="parameter" id="delete-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="delete-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http DELETE request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="deleteUri" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/deleteUri.html">deleteUri</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="deleteUri-param-uri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span>, </span><span class="parameter" id="deleteUri-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="deleteUri-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="deleteUri-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http DELETE request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="download" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/download.html">download</a></span><span class="signature">(<wbr><span class="parameter" id="download-param-urlPath"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">urlPath</span>, </span><span class="parameter" id="download-param-savePath"><span class="type-annotation">dynamic</span> <span class="parameter-name">savePath</span>, </span><span class="parameter" id="download-param-onReceiveProgress">{<span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>, </span><span class="parameter" id="download-param-queryParameters"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">queryParameters</span>, </span><span class="parameter" id="download-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="download-param-deleteOnError"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">deleteOnError</span> = <span class="default-value">true</span>, </span><span class="parameter" id="download-param-lengthHeader"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">lengthHeader</span> = <span class="default-value">Headers.contentLengthHeader</span>, </span><span class="parameter" id="download-param-data"><span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="download-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Download the file and save it in local. The default http method is 'GET',
+you can custom it by <a href="https://pub.dev/documentation/dio/4.0.6/dio/Options/method.html">Options.method</a>. <a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/download.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="downloadUri" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/downloadUri.html">downloadUri</a></span><span class="signature">(<wbr><span class="parameter" id="downloadUri-param-uri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span>, </span><span class="parameter" id="downloadUri-param-savePath"><span class="type-annotation">dynamic</span> <span class="parameter-name">savePath</span>, </span><span class="parameter" id="downloadUri-param-onReceiveProgress">{<span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>, </span><span class="parameter" id="downloadUri-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="downloadUri-param-deleteOnError"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span> <span class="parameter-name">deleteOnError</span> = <span class="default-value">true</span>, </span><span class="parameter" id="downloadUri-param-lengthHeader"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">lengthHeader</span> = <span class="default-value">Headers.contentLengthHeader</span>, </span><span class="parameter" id="downloadUri-param-data"><span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="downloadUri-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Download the file and save it in local. The default http method is 'GET',
+you can custom it by <a href="https://pub.dev/documentation/dio/4.0.6/dio/Options/method.html">Options.method</a>. <a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/downloadUri.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="fetch" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/fetch.html">fetch</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="fetch-param-requestOptions"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/RequestOptions-class.html">RequestOptions</a></span> <span class="parameter-name">requestOptions</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+   
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="get" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/get.html">get</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="get-param-path"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span>, </span><span class="parameter" id="get-param-queryParameters">{<span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">queryParameters</span>, </span><span class="parameter" id="get-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="get-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="get-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http GET request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="getUri" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/getUri.html">getUri</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="getUri-param-uri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span>, </span><span class="parameter" id="getUri-param-options">{<span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="getUri-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="getUri-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http GET request, which is a alias of <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="head" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/head.html">head</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="head-param-path"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span>, </span><span class="parameter" id="head-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="head-param-queryParameters"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">queryParameters</span>, </span><span class="parameter" id="head-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="head-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http HEAD request, which is a alias of <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="headUri" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/headUri.html">headUri</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="headUri-param-uri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span>, </span><span class="parameter" id="headUri-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="headUri-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="headUri-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http HEAD request, which is a alias of <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="lock" class="callable inherited">
+  <span class="name deprecated"><a class="deprecated" href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/lock.html">lock</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Lock the current Dio instance. <a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/lock.html">[...]</a>
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Will delete in v5.0. Use `QueuedInterceptor` instead, more detail see&#39; &#39; https:&#47;&#47;github.com&#47;flutterchina&#47;dio&#47;issues&#47;1308&#39;), inherited</div>
+
+</dd>
+
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="patch" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/patch.html">patch</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="patch-param-path"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span>, </span><span class="parameter" id="patch-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="patch-param-queryParameters"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">queryParameters</span>, </span><span class="parameter" id="patch-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="patch-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="patch-param-onSendProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onSendProgress</span>, </span><span class="parameter" id="patch-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http PATCH request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="patchUri" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/patchUri.html">patchUri</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="patchUri-param-uri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span>, </span><span class="parameter" id="patchUri-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="patchUri-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="patchUri-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="patchUri-param-onSendProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onSendProgress</span>, </span><span class="parameter" id="patchUri-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http PATCH request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="post" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/post.html">post</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="post-param-path"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span>, </span><span class="parameter" id="post-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="post-param-queryParameters"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">queryParameters</span>, </span><span class="parameter" id="post-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="post-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="post-param-onSendProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onSendProgress</span>, </span><span class="parameter" id="post-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http POST request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="postUri" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/postUri.html">postUri</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="postUri-param-uri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span>, </span><span class="parameter" id="postUri-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="postUri-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="postUri-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="postUri-param-onSendProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onSendProgress</span>, </span><span class="parameter" id="postUri-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http POST request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="put" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/put.html">put</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="put-param-path"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span>, </span><span class="parameter" id="put-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="put-param-queryParameters"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">queryParameters</span>, </span><span class="parameter" id="put-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="put-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="put-param-onSendProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onSendProgress</span>, </span><span class="parameter" id="put-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http PUT request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="putUri" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/putUri.html">putUri</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="putUri-param-uri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span>, </span><span class="parameter" id="putUri-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="putUri-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="putUri-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="putUri-param-onSendProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onSendProgress</span>, </span><span class="parameter" id="putUri-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Handy method to make http PUT request, which is a alias of  <code>BaseDio.requestOptions</code>. 
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="request" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/request.html">request</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="request-param-path"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span> <span class="parameter-name">path</span>, </span><span class="parameter" id="request-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="request-param-queryParameters"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>, <span class="type-parameter">dynamic</span>&gt;</span>?</span> <span class="parameter-name">queryParameters</span>, </span><span class="parameter" id="request-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="request-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="request-param-onSendProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onSendProgress</span>, </span><span class="parameter" id="request-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Make http request with options. <a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/request.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="requestUri" class="callable inherited">
+  <span class="name"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/requestUri.html">requestUri</a></span><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span><span class="signature">(<wbr><span class="parameter" id="requestUri-param-uri"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Uri-class.html">Uri</a></span> <span class="parameter-name">uri</span>, </span><span class="parameter" id="requestUri-param-data">{<span class="type-annotation">dynamic</span> <span class="parameter-name">data</span>, </span><span class="parameter" id="requestUri-param-cancelToken"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/CancelToken-class.html">CancelToken</a>?</span> <span class="parameter-name">cancelToken</span>, </span><span class="parameter" id="requestUri-param-options"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Options-class.html">Options</a>?</span> <span class="parameter-name">options</span>, </span><span class="parameter" id="requestUri-param-onSendProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onSendProgress</span>, </span><span class="parameter" id="requestUri-param-onReceiveProgress"><span class="type-annotation"><a href="https://pub.dev/documentation/dio/4.0.6/dio/ProgressCallback.html">ProgressCallback</a>?</span> <span class="parameter-name">onReceiveProgress</span>}</span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://pub.dev/documentation/dio/4.0.6/dio/Response-class.html">Response</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span>&gt;</span></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Make http request with options. <a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/requestUri.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="unlock" class="callable inherited">
+  <span class="name deprecated"><a class="deprecated" href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/unlock.html">unlock</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; void</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Unlock the current Dio instance. <a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/unlock.html">[...]</a>
+  <div class="features">@<a href="https://api.flutter.dev/flutter/dart-core/Deprecated-class.html">Deprecated</a>(&#39;Will delete in v5.0. Use `QueuedInterceptor` instead, more detail see&#39; &#39; https:&#47;&#47;github.com&#47;flutterchina&#47;dio&#47;issues&#47;1308&#39;), inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">next_photo</a></li>
+  <li><a href="../common/common-library.html">common</a></li>
+  <li class="self-crumb">AppHttpClient class</li>
+</ol>
+
+
+    <h5>common library</h5>
+    <ol>
+  <li class="section-title"><a href="../common/common-library.html#classes">Classes</a></li>
+  <li><a href="../common/AppColors-class.html">AppColors</a></li>
+  <li><a href="../common/AppDimens-class.html">AppDimens</a></li>
+  <li><a href="../common/AppHttpClient-class.html">AppHttpClient</a></li>
+  <li><a href="../common/AppIconButton-class.html">AppIconButton</a></li>
+  <li><a href="../common/AppIcons-class.html">AppIcons</a></li>
+  <li><a href="../common/AppLogo-class.html">AppLogo</a></li>
+  <li><a href="../common/AppRefreshIndicator-class.html">AppRefreshIndicator</a></li>
+  <li><a href="../common/AppSnackBars-class.html">AppSnackBars</a></li>
+  <li><a href="../common/AppTextStyles-class.html">AppTextStyles</a></li>
+  <li><a href="../common/BottomNavigationCubit-class.html">BottomNavigationCubit</a></li>
+  <li><a href="../common/DarkThemeColor-class.html">DarkThemeColor</a></li>
+  <li><a href="../common/LightThemeColor-class.html">LightThemeColor</a></li>
+  <li><a href="../common/MainScreen-class.html">MainScreen</a></li>
+  <li><a href="../common/ThemedColor-class.html">ThemedColor</a></li>
+  <li><a href="../common/VerticalDivider-class.html">VerticalDivider</a></li>
+
+  <li class="section-title"><a href="../common/common-library.html#extensions">Extensions</a></li>
+  <li><a href="../common/BottomNavigationTabExtension.html">BottomNavigationTabExtension</a></li>
+
+
+
+  <li class="section-title"><a href="../common/common-library.html#properties">Properties</a></li>
+  <li><a href="../common/appThemes.html">appThemes</a></li>
+  <li><a href="../common/localizationDelegates.html">localizationDelegates</a></li>
+  <li><a href="../common/supportedLocales.html">supportedLocales</a></li>
+
+  <li class="section-title"><a href="../common/common-library.html#functions">Functions</a></li>
+  <li><a href="../common/getAdapter.html">getAdapter</a></li>
+
+  <li class="section-title"><a href="../common/common-library.html#enums">Enums</a></li>
+  <li><a href="../common/BottomNavigationTab.html">BottomNavigationTab</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../common/AppHttpClient-class.html#constructors">Constructors</a></li>
+    <li><a href="../common/AppHttpClient/AppHttpClient.html">AppHttpClient</a></li>
+
+
+    <li class="section-title inherited">
+      <a href="../common/AppHttpClient-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/httpClientAdapter.html">httpClientAdapter</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/interceptors.html">interceptors</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/options.html">options</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/transformer.html">transformer</a></li>
+
+    <li class="section-title inherited"><a href="../common/AppHttpClient-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a class="deprecated" href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/clear.html">clear</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/close.html">close</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/delete.html">delete</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/deleteUri.html">deleteUri</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/download.html">download</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/downloadUri.html">downloadUri</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/fetch.html">fetch</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/get.html">get</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/getUri.html">getUri</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/head.html">head</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/headUri.html">headUri</a></li>
+    <li class="inherited"><a class="deprecated" href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/lock.html">lock</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/patch.html">patch</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/patchUri.html">patchUri</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/post.html">post</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/postUri.html">postUri</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/put.html">put</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/putUri.html">putUri</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/request.html">request</a></li>
+    <li class="inherited"><a href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/requestUri.html">requestUri</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+    <li class="inherited"><a class="deprecated" href="https://pub.dev/documentation/dio/4.0.6/dio/DioMixin/unlock.html">unlock</a></li>
+
+    <li class="section-title inherited"><a href="../common/AppHttpClient-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    next_photo
+      0.0.1+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

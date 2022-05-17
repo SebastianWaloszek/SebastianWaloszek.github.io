@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="base library API docs, for the Dart programming language.">
+  <title>base library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">next_photo</a></li>
+    <li class="self-crumb">base library</li>
+  </ol>
+  <div class="self-name">base</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-library">base</span> library 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+<section class="desc markdown">
+  <p>The base framework.</p>
+<p>Contains base components for use in any flutter project.</p>
+</section>
+
+
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="AsyncUseCaseWithoutParams">
+  <span class="name "><a href="../base/AsyncUseCaseWithoutParams-class.html">AsyncUseCaseWithoutParams</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> 
+
+</dt>
+<dd>
+  A asynchronous use case without parameters. 
+</dd>
+
+        <dt id="AsyncUseCaseWithParams">
+  <span class="name "><a href="../base/AsyncUseCaseWithParams-class.html">AsyncUseCaseWithParams</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>, <span class="type-parameter">P extends <a href="../base/Params-class.html">Params</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  A asynchronous use case with <code>P</code> parameters. 
+</dd>
+
+        <dt id="Failure">
+  <span class="name "><a href="../base/Failure-class.html">Failure</a></span> 
+
+</dt>
+<dd>
+  The error returned by a failure result. 
+</dd>
+
+        <dt id="Id">
+  <span class="name "><a href="../base/Id-class.html">Id</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> 
+
+</dt>
+<dd>
+  The interface for an id with <code>T</code> type value; 
+</dd>
+
+        <dt id="InjectedBlocProvider">
+  <span class="name "><a href="../base/InjectedBlocProvider-class.html">InjectedBlocProvider</a><span class="signature">&lt;<wbr><span class="type-parameter">B extends <a href="https://pub.dev/documentation/bloc/8.0.3/bloc/BlocBase-class.html">BlocBase</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span>&gt;</span></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  A provider for a <code>B</code> type bloc or cubit that is injected. 
+</dd>
+
+        <dt id="Mapper">
+  <span class="name "><a href="../base/Mapper-class.html">Mapper</a><span class="signature">&lt;<wbr><span class="type-parameter">I</span>, <span class="type-parameter">O</span>&gt;</span></span> 
+
+</dt>
+<dd>
+  The interface for mapping one class to another. 
+</dd>
+
+        <dt id="Params">
+  <span class="name "><a href="../base/Params-class.html">Params</a></span> 
+
+</dt>
+<dd>
+  The interface for use case parameters. 
+</dd>
+
+        <dt id="Result">
+  <span class="name "><a href="../base/Result-class.html">Result</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> 
+
+</dt>
+<dd>
+  The outcome of a operation. <a href="../base/Result-class.html">[...]</a>
+</dd>
+
+        <dt id="StreamUseCaseWithoutParams">
+  <span class="name "><a href="../base/StreamUseCaseWithoutParams-class.html">StreamUseCaseWithoutParams</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> 
+
+</dt>
+<dd>
+  A use case without parameters that returns a stream. 
+</dd>
+
+        <dt id="StreamUseCaseWithParams">
+  <span class="name "><a href="../base/StreamUseCaseWithParams-class.html">StreamUseCaseWithParams</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>, <span class="type-parameter">P extends <a href="../base/Params-class.html">Params</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  A use case with parameters that returns a stream. 
+</dd>
+
+        <dt id="UseCaseWithoutParams">
+  <span class="name "><a href="../base/UseCaseWithoutParams-class.html">UseCaseWithoutParams</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>&gt;</span></span> 
+
+</dt>
+<dd>
+  A synchronous use case without parameters. 
+</dd>
+
+        <dt id="UseCaseWithParams">
+  <span class="name "><a href="../base/UseCaseWithParams-class.html">UseCaseWithParams</a><span class="signature">&lt;<wbr><span class="type-parameter">T</span>, <span class="type-parameter">P extends <a href="../base/Params-class.html">Params</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  A synchronous use case with <code>P</code> parameters. 
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">next_photo</a></li>
+  <li class="self-crumb">base library</li>
+</ol>
+
+
+    <h5><span class="package-name">next_photo</span> <span class="package-kind">package</span></h5>
+    <ol>
+      <li class="section-title">Libraries</li>
+      <li><a href="../app/app-library.html">app</a></li>
+      <li><a href="../base/base-library.html">base</a></li>
+      <li><a href="../common/common-library.html">common</a></li>
+      <li><a href="../di/di-library.html">di</a></li>
+      <li><a href="../features/features-library.html">features</a></li>
+      <li><a href="../generated_plugin_registrant/generated_plugin_registrant-library.html">generated_plugin_registrant</a></li>
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <h5>base library</h5>
+    <ol>
+  <li class="section-title"><a href="../base/base-library.html#classes">Classes</a></li>
+  <li><a href="../base/AsyncUseCaseWithoutParams-class.html">AsyncUseCaseWithoutParams</a></li>
+  <li><a href="../base/AsyncUseCaseWithParams-class.html">AsyncUseCaseWithParams</a></li>
+  <li><a href="../base/Failure-class.html">Failure</a></li>
+  <li><a href="../base/Id-class.html">Id</a></li>
+  <li><a href="../base/InjectedBlocProvider-class.html">InjectedBlocProvider</a></li>
+  <li><a href="../base/Mapper-class.html">Mapper</a></li>
+  <li><a href="../base/Params-class.html">Params</a></li>
+  <li><a href="../base/Result-class.html">Result</a></li>
+  <li><a href="../base/StreamUseCaseWithoutParams-class.html">StreamUseCaseWithoutParams</a></li>
+  <li><a href="../base/StreamUseCaseWithParams-class.html">StreamUseCaseWithParams</a></li>
+  <li><a href="../base/UseCaseWithoutParams-class.html">UseCaseWithoutParams</a></li>
+  <li><a href="../base/UseCaseWithParams-class.html">UseCaseWithParams</a></li>
+
+
+
+
+
+
+
+
+</ol>
+
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    next_photo
+      0.0.1+1
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
