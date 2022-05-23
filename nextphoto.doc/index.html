@@ -46,7 +46,7 @@
 <section class="desc markdown">
   <h1 id="next_photo">next_photo</h1>
 <p>A Flutter Instagram look-alike photo blog application. Uses <a href="https://jsonplaceholder.typicode.com/">jsonplaceholder</a> for mock data. Please refer to <a href="#coding-task">coding task</a> for info about desired features.</p>
-<p>🚧  Still under development. So not all things are finished yet.👷‍♂️ 🚧</p>
+<p>🚧  Still under development. 👷‍♂️ 🚧  So not all things are finished or polished yet.</p>
 <p><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/62a8c9143896211.62830596b5878.png" alt="alt text"></p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
@@ -81,7 +81,7 @@ Engine • revision d1b9a6938a
 Tools • Dart 2.17.0 • DevTools 2.12.2
 </code></pre>
 <h2 id="web-demo">Web demo</h2>
-<p>The live web version demo of the app can be found <a href="https://sebastianwaloszek.github.io/nextphoto.web/#/">here</a>.</p>
+<p>The live web demo version of the app can be found <a href="https://sebastianwaloszek.github.io/nextphoto.web/#/">here</a>.</p>
 <h2 id="project-structure">Project structure</h2>
 <p>The project's main <a href="lib/src/">src</a> module contains 4 submodules:</p>
 <ul>
@@ -108,11 +108,14 @@ features.</li>
 <ul>
 <li>Web</li>
 </ul>
-<pre class="language-dart"><code>flutter build web --web-renderer html -t lib/src/main_dev.dart
+<pre class="language-dart"><code>flutter run -d chrome --web-renderer html -t lib/src/main_dev.dart
 </code></pre>
 <h2 id="tests">Tests</h2>
 <p>Run unit tests by typing:</p>
 <pre class="language-dart"><code>flutter test
+</code></pre>
+<p>Run integration tests by typing:</p>
+<pre class="language-dart"><code>flutter test integration_test --flavor=stage
 </code></pre>
 <h2 id="index-files">Index files</h2>
 <p>To update the list of files included in documentation for <code>base</code>, <code>common</code> and <code>features</code> libraries code generation with <a href="https://pub.dev/packages/index_generator">index_generator</a> is used.</p>
@@ -124,16 +127,22 @@ features.</li>
 </code></pre>
 <p>Right now the libraries <code>app</code> and <code>di</code> don't use code generation as they are small and usually don't change in terms of included files.</p>
 <h2 id="documentation">Documentation</h2>
-<p>Documentation for the whole app can be found here. Generate it on your own by running:</p>
+<p>Documentation for the whole app can be found <a href="https://sebastianwaloszek.github.io/nextphoto.doc/index.html">here</a>. Generate it on your own by running:</p>
 <pre class="language-dart"><code>flutter pub global run dartdoc 
 </code></pre>
 <h2 id="code-coverage">Code coverage</h2>
-<p>To generate code coverage run:</p>
+<p>To generate code coverage reports run:</p>
 <pre class="language-dart"><code>dart pub global activate remove_from_coverage
 flutter test --coverage 
 remove_from_coverage -f coverage/lcov.info -r '.g.dart|.freezed.dart$|\bgenerated\b'
 genhtml coverage/lcov.info -o coverage/html
 </code></pre>
+<h2 id="app-icon">App icon</h2>
+<p>To change the app icon on mobile change the files inside <a href="launcher_icon">launcher_icon</a> and then run:</p>
+<pre class="language-dart"><code>flutter pub get
+flutter pub run flutter_launcher_icons:main -f flutter_launcher_icons-development.yaml
+</code></pre>
+<p>Running it for one file will run it for all flavors.</p>
 </section>
 
 

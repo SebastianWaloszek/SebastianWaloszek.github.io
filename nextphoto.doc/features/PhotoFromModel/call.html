@@ -79,8 +79,8 @@ Photo call(PhotoModel photoModel) {
     id: PhotoId(photoModel.id),
     albumId: AlbumId(photoModel.albumId),
     title: photoModel.title ?? &#39;&#39;,
-    url: photoModel.url,
-    thumbnailUrl: photoModel.thumbnailUrl,
+    url: &#39;https:&#47;&#47;picsum.photos&#47;id&#47;${photoModel.id}&#47;1200&#47;1200&#39;,
+    thumbnailUrl: &#39;https:&#47;&#47;picsum.photos&#47;id&#47;${photoModel.id}&#47;600&#47;600&#39;,
   );
 }</code></pre>
 </section>

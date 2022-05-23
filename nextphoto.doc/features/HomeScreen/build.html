@@ -107,18 +107,14 @@ and</li>
   <h2><span>Implementation</span></h2>
   <pre class="language-dart"><code class="language-dart">@override
 Widget build(BuildContext context) {
-  return Scaffold(
-    body: SafeArea(
-      child: Material(
-        child: Column(
-          children: const [
-            _TopNavigationBar(),
-            Expanded(
-              child: _ContentScrollView(),
-            ),
-          ],
+  return AppScreen(
+    body: Column(
+      children: const [
+        _TopNavigationBar(),
+        Expanded(
+          child: _ContentScrollView(),
         ),
-      ),
+      ],
     ),
   );
 }</code></pre>
