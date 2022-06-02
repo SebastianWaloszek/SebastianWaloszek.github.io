@@ -44,46 +44,68 @@
   <div id="dartdoc-main-content" class="main-content">
       
 <section class="desc markdown">
-  <h1 id="next_photo">next_photo</h1>
+  <p><img src="https://github.com/SebastianWaloszek/next_photo/actions/workflows/build.yml/badge.svg" alt="Build">
+<a href="https://codecov.io/gh/SebastianWaloszek/next_photo"><img src="https://codecov.io/gh/SebastianWaloszek/next_photo/branch/master/graph/badge.svg?token=FX7V3V8AA4" alt="codecov"></a></p>
+<h1 id="nextphoto">NextPhoto</h1>
 <p>A Flutter Instagram look-alike photo blog application. Uses <a href="https://jsonplaceholder.typicode.com/">jsonplaceholder</a> for mock data. Please refer to <a href="#coding-task">coding task</a> for info about desired features.</p>
 <p>🚧  Still under development. 👷‍♂️ 🚧  So not all things are finished or polished yet.</p>
 <p><img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/62a8c9143896211.62830596b5878.png" alt="alt text"></p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ul>
 <li><a href="#coding-task">Coding task</a></li>
+<li><a href="#implemented-functionality">Implemented functionality</a></li>
 <li><a href="#figma-design">Figma design</a></li>
-<li><a href="#flutter-version">Flutter version</a></li>
 <li><a href="#web-demo">Web demo</a></li>
 <li><a href="#project-structure">Project structure</a></li>
-<li><a href="#feature-structure">Feature structure</a></li>
+<li><a href="#module-structure">Module structure</a></li>
+<li><a href="#flutter-version">Flutter version</a></li>
 <li><a href="#running-the-app">Running the app</a></li>
 <li><a href="#tests">Tests</a></li>
 <li><a href="#index-files">Index files</a></li>
 <li><a href="#documentation">Documentation</a></li>
 <li><a href="#code-coverage">Code coverage</a></li>
+<li><a href="#app-icon">App icon</a></li>
 </ul>
 <h2 id="coding-task">Coding task</h2>
 <p>Create the following Flutter app:</p>
 <ol>
-<li>Create Infinite scroll list with images (use <a href="https://jsonplaceholder.typicode.com">https://jsonplaceholder.typicode.com</a> photos as API source) ✅</li>
-<li>Each image in the list has a title, an image preview and a like button. ✅</li>
-<li>By tapping on a preview image user is shown a full-sized image in a popup. ❌</li>
-<li>User can like and unlike images by tapping Like button. ✅</li>
-<li>Like state persist between app launches. ✅</li>
+<li>Create Infinite scroll list with images (use <a href="https://jsonplaceholder.typicode.com">https://jsonplaceholder.typicode.com</a> photos as API source)</li>
+<li>Each image in the list has a title, an image preview and a like button.</li>
+<li>By tapping on a preview image user is shown a full-sized image in a popup.</li>
+<li>User can like and unlike images by tapping Like button.</li>
+<li>Like state persist between app launches.</li>
 </ol>
+<h2 id="implemented-functionality">Implemented functionality</h2>
+<p>These is the list of all app features available to the user as of now:</p>
+<ul>
+<li>Fetching photos.
+<ul>
+<li><a href="https://jsonplaceholder.typicode.com">Jsonplaceholder</a> was used as data source in combination with <a href="https://picsum.photos/">picsum</a> to show more interesting images.</li>
+</ul>
+</li>
+<li>Liking and unliking photos.
+<ul>
+<li>Each like state for a photo is persisted between app launches.</li>
+</ul>
+</li>
+<li>Full photo view.
+<ul>
+<li>After clicking on a photo a separate image view is opened with zoom functionality.</li>
+</ul>
+</li>
+<li>Photo list refresh.
+<ul>
+<li>The photo data is refreshed each time the list is dragged from the top.</li>
+</ul>
+</li>
+</ul>
+<p>Other functionality is either mocked, placeholders or unused for now.</p>
 <h2 id="figma-design">Figma design</h2>
 <p>The figma design file that was prepared by me for this app can be found <a href="https://www.figma.com/file/kWh5yBJmKgaLXaM7avh39H/next_photo?node-id=5%3A600">here</a>.</p>
-<h2 id="flutter-version">Flutter version</h2>
-<p>This app was developed and tested on the following flutter channel and version:</p>
-<pre class="language-javascript"><code class="language-javascript">Flutter 3.0.0 • channel stable • https://github.com/flutter/flutter.git
-Framework • revision ee4e09cce0 (7 days ago) • 2022-05-09 16:45:18 -0700
-Engine • revision d1b9a6938a
-Tools • Dart 2.17.0 • DevTools 2.12.2
-</code></pre>
 <h2 id="web-demo">Web demo</h2>
 <p>The live web demo version of the app can be found <a href="https://sebastianwaloszek.github.io/nextphoto.web/#/">here</a>.</p>
 <h2 id="project-structure">Project structure</h2>
-<p>The project's main <a href="lib/src/">src</a> module contains 4 submodules:</p>
+<p>The project's main <a href="lib/src">src</a> module contains 4 submodules:</p>
 <ul>
 <li><a href="lib/src/app">app</a> - contains code responsible for configuring and running the application.</li>
 <li><a href="lib/src/base">base</a> - contains components that can serve as a basis for any flutter project.</li>
@@ -91,8 +113,26 @@ Tools • Dart 2.17.0 • DevTools 2.12.2
 features.</li>
 <li><a href="lib/src/features">features</a> - contains modules for all the app's main features.</li>
 </ul>
-<h2 id="feature-structure">Feature structure</h2>
-<p>// TODO</p>
+<h2 id="module-structure">Module structure</h2>
+<p>Each module follows strict layer segregation. Three main layers are defined:</p>
+<ul>
+<li>
+<p><strong>data</strong> - manages the application logic related to communicating with the network, retrieving &amp; sending data, managing local storage etc.</p>
+</li>
+<li>
+<p><strong>domain</strong> - is dedicated to business level logic.</p>
+</li>
+<li>
+<p><strong>presentation</strong> - is responsible for presenting data to screen and handling user interactions.</p>
+</li>
+</ul>
+<h2 id="flutter-version">Flutter version</h2>
+<p>This app was developed and tested on the following flutter channel and version:</p>
+<pre class="language-javascript"><code class="language-javascript">Flutter 3.0.0 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision ee4e09cce0 (7 days ago) • 2022-05-09 16:45:18 -0700
+Engine • revision d1b9a6938a
+Tools • Dart 2.17.0 • DevTools 2.12.2
+</code></pre>
 <h2 id="running-the-app">Running the app</h2>
 <p>If you want to run the app using the terminal:</p>
 <ul>
@@ -110,39 +150,52 @@ features.</li>
 </ul>
 <pre class="language-dart"><code>flutter run -d chrome --web-renderer html -t lib/src/main_dev.dart
 </code></pre>
-<h2 id="tests">Tests</h2>
-<p>Run unit tests by typing:</p>
-<pre class="language-dart"><code>flutter test
+<ul>
+<li>MacOS, Windows, Linux</li>
+</ul>
+<pre class="language-dart"><code>flutter run -d macos|windows|linux -t lib/src/main_dev.dart
+
+## Tests
+Run unit tests by typing:
 </code></pre>
-<p>Run integration tests by typing:</p>
-<pre class="language-dart"><code>flutter test integration_test --flavor=stage
+<p>flutter test</p>
+<pre class="language-dart"><code>Run integration tests by typing:
 </code></pre>
-<h2 id="index-files">Index files</h2>
-<p>To update the list of files included in documentation for <code>base</code>, <code>common</code> and <code>features</code> libraries code generation with <a href="https://pub.dev/packages/index_generator">index_generator</a> is used.</p>
-<p>To activate <code>index_generator</code> run:</p>
-<pre class="language-dart"><code>flutter pub global activate index_generator
+<p>flutter test integration_test --flavor=stage</p>
+<pre class="language-dart"><code>
+## Index files
+To update the list of files included in documentation for `base`, `common` and `features` libraries code generation with [index_generator](https://pub.dev/packages/index_generator) is used.
+
+To activate `index_generator` run:
 </code></pre>
-<p>To update index files run:</p>
-<pre class="language-dart"><code>flutter pub global run index_generator
+<p>flutter pub global activate index_generator</p>
+<pre class="language-dart"><code>
+To update index files run:
 </code></pre>
-<p>Right now the libraries <code>app</code> and <code>di</code> don't use code generation as they are small and usually don't change in terms of included files.</p>
-<h2 id="documentation">Documentation</h2>
-<p>Documentation for the whole app can be found <a href="https://sebastianwaloszek.github.io/nextphoto.doc/index.html">here</a>. Generate it on your own by running:</p>
-<pre class="language-dart"><code>flutter pub global run dartdoc 
+<p>flutter pub global run index_generator</p>
+<pre class="language-dart"><code>
+Right now the libraries `app` and `di` don't use code generation as they are small and usually don't change in terms of included files.
+
+## Documentation
+Documentation for the whole app can be found [here](https://sebastianwaloszek.github.io/nextphoto.doc/index.html). Generate it on your own by running:
 </code></pre>
-<h2 id="code-coverage">Code coverage</h2>
-<p>To generate code coverage reports run:</p>
-<pre class="language-dart"><code>dart pub global activate remove_from_coverage
+<p>flutter pub global run dartdoc</p>
+<pre class="language-dart"><code>
+## Code coverage
+To generate code coverage reports run:
+</code></pre>
+<p>dart pub global activate remove_from_coverage
 flutter test --coverage 
 remove_from_coverage -f coverage/lcov.info -r '.g.dart|.freezed.dart$|\bgenerated\b'
-genhtml coverage/lcov.info -o coverage/html
+genhtml coverage/lcov.info -o coverage/html</p>
+<pre class="language-dart"><code>
+## App icon
+To change the app icon on mobile change the files inside [launcher_icon](launcher_icon) and then run:
 </code></pre>
-<h2 id="app-icon">App icon</h2>
-<p>To change the app icon on mobile change the files inside <a href="launcher_icon">launcher_icon</a> and then run:</p>
-<pre class="language-dart"><code>flutter pub get
-flutter pub run flutter_launcher_icons:main -f flutter_launcher_icons-development.yaml
+<p>flutter pub get
+flutter pub run flutter_launcher_icons:main -f flutter_launcher_icons-development.yaml</p>
+<pre class="language-dart"><code>Running it for one file will run it for all flavors.
 </code></pre>
-<p>Running it for one file will run it for all flavors.</p>
 </section>
 
 
@@ -221,7 +274,7 @@ flutter pub run flutter_launcher_icons:main -f flutter_launcher_icons-developmen
 <footer>
   <span class="no-break">
     next_photo
-      0.0.1+1
+      0.0.3+3
   </span>
 
   
